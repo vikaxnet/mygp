@@ -1,0 +1,11 @@
+body{margin:0px; padding:0px; background-image:url(images/bgmage.png); background-size:100% 924px; background-repeat:norepeat; width:100%; overflow:scroll;}
+#header{background-color:#660033; font-family:arial black; color:white; padding:0px;}
+#icon{position:fixed;z-index:1;}
+#data{background-color:grey;font-family:comic sans ms; border-radius:15px; width:100%;}
+.action{width:80%; font-family:arial black; color:violet; height:40px; font-size:100%; background-color:#660033; border:0px; border-radius:25px;} #content{margin-top:5%; width:90%; background-color:violet; border:25px dotted black; border-color:navy; border-radius:20px; opacity:0.92;} table{table, td, th {
+    border: 0px solid white; 
+}  #gptable {font-size:10%; color:navy; width:100%;  background-color:violet; border:25px dotted black; border-color:navy; border-radius:20px; opacity:0.92; overflow:scroll;}
+td {text-align:left;}
+} #footer{background-color:transparent; font-family:comic sans ms;}
+.field{width:30px; background-color:transparent; border:0px; color:navy; font-family:arial black;}
+.result{background-color:grey; color:navy; font-family:arial black; width:100%;}
