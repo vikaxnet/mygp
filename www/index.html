@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<title> My gp calculator
+</title>
+<script> function gooo(){
+window.location=("display.html"); }
+function next(){ 
+document.getElementById("iconobj").style.width="10%";
+} setTimeout("next()",2000); 
+function nexta(){ 
+document.getElementById("iconobj").style.width="15%"; }
+setTimeout("nexta()",3000);
+function nextab(){ 
+document.getElementById("iconobj").style.width="20%"; }
+setTimeout("nextab()",3500);
+function nextabc(){ 
+document.getElementById("iconobj").style.width="25%"; }
+setTimeout("nextabc()",4000); 
+
+ 
+
+
+setTimeout("gooo()",10000);
+
+</script>
+</head>
+<style>
+body{width:100%; background-color:violet; margin:0px; padding:0px; position:fixed;}
+h1{background-color:yellow; font-family:comic sans ms;align:center;}
+#content{margin-top:20%; font-size:200%;}
+#action{width:80%; font-family:arial black; font-size:100%; background-color:grey; border:0px; border-radius:25px;} table{border:2px;}
+</style>
+<body> <center> <div id="content"> <span id="icon">  <img src="images/icono.png" width="30%" id="iconobj"> </span> <br> 
+<input type="button" value="CONTINUE" id="action" onclick="gooo()"> </div> </center>  
+</body>
+</html>
