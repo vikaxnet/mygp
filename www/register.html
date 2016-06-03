@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<title>
+My Gp Calculator
+</title>
+<style>
+body{margin:0px; padding:0px; background-image:url(images/bgmage.png); background-size:100% 1024px; background-repeat:norepeat;width:100%;  overflow:scroll;}
+#header{background-color:#660033; font-family:arial black; color:white;}
+#icon{position:fixed;}
+.action{width:80%; font-family:arial black; color:violet; height:40px; font-size:100%; background-color:#660033; border:0px; border-radius:25px;} #content{margin-top:10%;margin-left:20%; margin-right:20%; background-color:violet; border:2px; border-radius:20px; opacity:0.92;} table{border:2px;} #footer{background-color:transparent; font-family:comic sans ms;}
+.action:hover{width:80%; font-family:arial black; color:red; height:40px; font-size:100%; background-color:navy; opacity:0.1;     filter: alpha(opacity=60); ;}
+
+#regoo{color:white; text-shadow:2px 2px navy;}</style> <script>
+function next(){ 
+var username=document.getElementById("name").value;  
+var programe=document.getElementById("prog").value; 
+var levela=document.getElementById("level").value;
+var department=document.getElementById("dept").value;
+var year=document.getElementById("year").value;
+var sno=document.getElementById("sn").value;
+localStorage.setItem("name", username);
+localStorage.setItem("myprogram", programe);
+localStorage.setItem("myyear", year);
+localStorage.setItem("mylevel", levela);
+localStorage.setItem("mydept", department);
+localStorage.setItem("mysn", sn);
+
+window.location=("gptable.html");
+}
+</script>
+</head>
+<body> <span id="icon"> <img src="images/icono.png" width="30%"> </span>
+<center>
+<div id="header">  <img src="images/headercon.png" width="50%">
+</div>
+<div id="content"> <h1>
+Enter Your Information to Continue.
+</h1> 
+<form id="get"> <b>
+Full Name: </b> <br> <input type="text" Class="box" id="name"> <br> <b> Reg No:<span id="regoo"> </span> </b> <br> Programe: <select Class="box" name="programe" id="prog"> <option value="ND"> ND </option>  </select> <br>  Level: <select Class="box" name="level" id="level"> <option value="nd1"> ND 1  </select> <br> Year:<select Class="box" name="year" id="year"> <option value="2015"> 015  </select> <br> Department:<select Class="box" name="department" id="dept"> <option value="cte"> Computer Engineering </select> <br> Serial No: <input type="text" name="sno" style="width:25px;" id="sn">
+<br> <br> <br> <input type="button" value="CONTINUE" class="action" onclick="next()">
+</form> <span id="footer"> <marquee direction="left"> For your app development call +2348142337936 or +2348026315772 or email:vikaxnet@gmail.com Website:vikaxnet.wordpress.com </marquee> </span> </div>
+</center>
+</body>
+</html>
