@@ -1,0 +1,1 @@
+this was created to enable me create a new image directory i can now upload images from git sit to this folder
