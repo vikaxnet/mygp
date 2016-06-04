@@ -5,7 +5,7 @@
 My Gp Calculator
 </title>
 <meta name="viewport content="width=device-width, initial-scale=1">
-<script> function profile() { document.getElementById("nameme").innerHTML = localStorage.getItem("name");}
+<script> function profile() { document.getElementById("nameme").innerHTML = localStorage.getItem("name"); document.getElementById("regina").innerHTML = localStorage.getItem("mysn");}
 function mygp() {
 var gns101sc=document.getElementById("gns101score").value;
 var gns127sc=document.getElementById("gns127score").value;
@@ -417,7 +417,7 @@ td {text-align:left;}
 <div id="header">  <img src="images/headercon.png" width="50%">
 </div>
 <div id="content"> <div id="data"> <table border=2> <tr> <td>
-Name: <span id="nameme">Okorie Victor </span> <br> Reg No: <span id="regina">Fpo/nd/cte/015/142 </span> <br> Department:<span id="departna">Computer Engineering </span> <br>  
+Name: <span id="nameme">Okorie Victor </span> <br> Reg No: <span id="regina">Fpo/nd/cte/015/<span id="regina">142 </span> <br> Department:<span id="departna">Computer Engineering </span> <br>  
 </td> <td>  <img src="images/userphoto.png" width="50%" id="usermage">  </td> </tr>  </table> </div> <div id="display" style="background-color:navy; font-family:arial black; color:violet"> 
 </div> </div>
 <div id="gptable"> 
