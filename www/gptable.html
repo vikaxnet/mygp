@@ -5,7 +5,10 @@
 My Gp Calculator
 </title>
 <meta name="viewport content="width=device-width, initial-scale=1">
-<script> function profile() { document.getElementById("nameme").innerHTML = localStorage.getItem("name"); document.getElementById("regina").innerHTML = localStorage.getItem("mysn");}
+<script> function profile() { 
+document.getElementById("nameme").innerHTML = localStorage.getItem("name"); 
+var x=localStorage.getItem("mydept"); var r=localStorage.getItem("mysn"); var xi=""; if (x=="cte") {xi="Computer Engineering";} else if (x=="eee") {xi="Electrical Electronic Engineering";} document.getElementById("departna").innerHTML=xi;
+document.getElementById("regina").innerHTML=r;}
 function mygp() {
 var gns101sc=document.getElementById("gns101score").value;
 var gns127sc=document.getElementById("gns127score").value;
@@ -362,13 +365,13 @@ var math112value=math112gp*2;
 var stat111value=stat111gp*2;
 var mec101value=mec101gp*2;
 var mec104value=mec104gp*2;
-var mec107value=mec107gp*2;
+var mec107value=mec107gp*3;
 var eec112value=eec112gp*3;
 var com111value=com111gp*2;
 var com112value=com112gp*3;
 var cte112value=cte112gp*2;
 var totalvalue=gns101value+gns127value+gns121value+math112value+stat111value+mec101value+mec104value+mec107value+eec112value+com111value+com112value+cte112value;
-var gp=totalvalue/26;
+var gp=totalvalue/27;
 document.getElementById("display").innerHTML="Grade Point:  "+gp; alert("Your Gp is " +gp);
 
 document.getElementById("gns101g").innerHTML=gns101g;
@@ -417,7 +420,7 @@ td {text-align:left;}
 <div id="header">  <img src="images/headercon.png" width="50%">
 </div>
 <div id="content"> <div id="data"> <table border=2> <tr> <td>
-Name: <span id="nameme">Okorie Victor </span> <br> Reg No: <span id="regina">Fpo/nd/cte/015/<span id="regina">142 </span> <br> Department:<span id="departna">Computer Engineering </span> <br>  
+Name: <span id="nameme">Okorie Victor </span> <br> Reg No: Fpo/nd/cte/015/<span id="regina">142 </span> <br> Department:<span id="departna">Computer Engineering </span> <br>  
 </td> <td>  <img src="images/userphoto.png" width="50%" id="usermage">  </td> </tr>  </table> </div> <div id="display" style="background-color:navy; font-family:arial black; color:violet"> 
 </div> </div>
 <div id="gptable"> 
@@ -431,11 +434,11 @@ Name: <span id="nameme">Okorie Victor </span> <br> Reg No: <span id="regina">Fpo
 </tr>
 <tr> <td> MATH 112 </td> <td> <input type="text" id="math112score" class="field" onfocus="calscore()"/> </td> <td> <span id="math112g"> </span> </td> <td> <span id="math112gp"> </span> </td> <td> <span id="mth112cu" class="creditunuits"> 2 </span> </td> 
 </tr>
-<tr> <td> STAT </td> <td><input type="text" id="stat111score" class="field" onfocus="calscore()"/> </td> <td> <span id="stat111g"> </span> </td> <td> <span id="stat111gp"> </span> </td> <td> <span id="statcu" class="creditunuits"> 2 </span></td> 
+<tr> <td> STA 111 </td> <td><input type="text" id="stat111score" class="field" onfocus="calscore()"/> </td> <td> <span id="stat111g"> </span> </td> <td> <span id="stat111gp"> </span> </td> <td> <span id="statcu" class="creditunuits"> 2 </span></td> 
 </tr>
 <tr> <td> MEC 101 </td> <td> <input type="text" id="mec101score" class="field" onfocus="calscore()"/> </td> <td> <span id="mec101g"> </span> </td> <td> <span id="mec101gp"> </span> </td> <td> <span id="mec101cu" class="creditunuits"> 2 </span></td> 
 </tr>
-<tr> <td> MEC 107 </td> <td> <input type="text" id="mec107score" class="field" onfocus="calscore()"/> </td> <td> <span id="mec107g"> </span> </td> <td> <span id="mec107gp"> </span> </td> <td> <span id="mec107cu" class="creditunuits">2 </span> </td> 
+<tr> <td> MEC 107 </td> <td> <input type="text" id="mec107score" class="field" onfocus="calscore()"/> </td> <td> <span id="mec107g"> </span> </td> <td> <span id="mec107gp"> </span> </td> <td> <span id="mec107cu" class="creditunuits">3 </span> </td> 
 </tr>
 <tr> <td> MEC 104 </td> <td> <input type="text" id="mec104score" class="field" onfocus="calscore()"/> </td> <td> <span id="mec104g"> </span> </td> <td> <span id="mec104gp"> </span> </td> <td> <span id="mec104cu" class="creditunuits"> 2 </span></td> 
 </tr>
