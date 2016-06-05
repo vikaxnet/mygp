@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+<head>
+<title>
+My Gp Calculator
+</title>
+<meta name="viewport content="width=device-width, initial-scale=1">
+<script> function profile() { document.getElementById("nameme").innerHTML = localStorage.getItem("name");
+var x=localStorage.getItem("mydept"); var r=localStorage.getItem("mysn"); var xi=""; if (x=="cte") {xi="Computer Engineering";} else if (x=="eee") {xi="Electrical Electronic Engineering";} document.getElementById("departna").innerHTML=xi;
+document.getElementById("regina").innerHTML=r;}
+function mygp() {
+var gns101sc=document.getElementById("gns101score").value;
+var mth112sc=document.getElementById("mth112score").value;
+var mec111sc=document.getElementById("mec111score").value;
+var mec122sc=document.getElementById("mec122score").value;
+var eec111sc=document.getElementById("eec111score").value; 
+var eec114sc=document.getElementById("eec114score").value;
+var eec112sc=document.getElementById("eec112score").value;
+var eec115sc=document.getElementById("eec115score").value;
+var eec117sc=document.getElementById("eec117score").value;
+var gns101gp="";
+
+if(gns101sc >= 75) 
+{
+gns101gp=4.00; gns101g="A"; }
+else if(gns101sc >= 70) {
+gns101gp=3.50; gns101g="AB";}
+else if(gns101sc >=65)
+{gns101gp=3.25; gns101g="B";}
+else if(gns101sc >=60)
+{gns101gp=3.00; gns101g="BC";}
+else if(gns101sc >=55)
+{gns101gp=2.75; gns101g="C"} 
+else if(gns101sc >=50)
+{gns101gp=2.50; gns101g="CD";
+} else if( gns101sc >=45) 
+{gns101gp=2.25; gns101g="D";}
+else if( gns101sc >=40) 
+{gns101gp=2.00; gns101g="P";}
+else if( gns101sc >=30) 
+{gns101gp=1.50; gns101g="F3";}
+else if( gns101sc >=20) 
+{gns101gp=1.00; gns101g="F2";} 
+else if( gns101sc >=10) 
+{gns101gp=0.50; gns101g="F1";}
+else if( gns101sc >=0) 
+{gns101gp=0.00; gns101g="F";}
+
+
+var mth112gp="";
+
+if(mth112sc >= 75) 
+{
+mth112gp=4.00; mth112g="A"; }
+else if(mth112sc >= 70) {
+mth112gp=3.50; mth112g="AB";}
+else if(mth112sc >=65)
+{mth112gp=3.25; mth112g="B";}
+else if(mth112sc >=60)
+{mth112gp=3.00; mth112g="BC";}
+else if(mth112sc >=55)
+{mth112gp=2.75; mth112g="C"} 
+else if(mth112sc >=50)
+{mth112gp=2.50; mth112g="CD";
+} else if( mth112sc >=45) 
+{mth112gp=2.25; mth112g="D";}
+else if( mth112sc >=40) 
+{mth112gp=2.00; mth112g="P";}
+else if( mth112sc >=30) 
+{mth112gp=1.50; mth112g="F3";}
+else if( mth112sc >=20) 
+{mth112gp=1.00; mth112g="F2";} 
+else if( mth112sc >=10) 
+{mth112gp=0.50; mth112g="F1";}
+else if( mth112sc >=0) 
+{mth112gp=0.00; mth112g="F";}
+
+
+var mec111gp="";
+
+if(mec111sc >= 75) 
+{
+mec111gp=4.00; mec111g="A"; }
+else if(mec111sc >= 70) {
+mec111gp=3.50; mec111g="AB";}
+else if(mec111sc >=65)
+{mec111gp=3.00; mec111g="B";}
+else if(mec111sc >=60)
+{mec111gp=3.50; mec111g="BC";}
+else if(mec111sc >=55)
+{mec111gp=2.27; mec111g="C"} 
+else if(mec111sc >=50)
+{mec111gp=2.50; mec111g="CD";
+} else if( mec111sc >=45) 
+{mec111gp=2.25; mec111g="D";}
+else if( mec111sc >=40) 
+{mec111gp=2.00; mec111g="P";}
+else if( mec111sc >=30) 
+{mec111gp=1.50; mec111g="F3";}
+else if( mec111sc >=20) 
+{mec111gp=1.00; mec111g="F2";} 
+else if( mec111sc >=10) 
+{mec111gp=0.50; mec111g="F1";}
+else if( mec111sc >=0) 
+{mec111gp=0.00; mec111g="F";}
+
+
+var mec122gp="";
+
+if(mec122sc >= 75) 
+{
+mec122gp=4.00; mec122g="A"; }
+else if(mec122sc >= 70) {
+mec122gp=3.50; mec122g="AB";}
+else if(mec122sc >=65)
+{mec122gp=3.25; mec122g="B";}
+else if(mec122sc >=60)
+{mec122gp=3.00; mec122g="BC";}
+else if(mec122sc >=55)
+{mec122gp=2.75; mec122g="C"} 
+else if(mec122sc >=50)
+{mec122gp=2.50; mec122g="CD";
+} else if( mec122sc >=45) 
+{mec122gp=2.25; mec122g="D";}
+else if( mec122sc >=40) 
+{mec122gp=2.00; mec122g="P";}
+else if( mec122sc >=30) 
+{mec122gp=1.50; mec122g="F3";}
+else if( mec122sc >=20) 
+{mec122gp=1.00; mec122g="F2";} 
+else if( mec122sc >=10) 
+{mec122gp=0.50; mec122g="F1";}
+else if( mec122sc >=0) 
+{mec122gp=0.00; mec122g="F";}
+
+var eec111gp="";
+
+if(eec111sc >= 75) 
+{
+eec111gp=4.00; eec111g="A"; }
+else if(eec111sc >= 70) {
+eec111gp=3.50; eec111g="AB";}
+else if(eec111sc >=65)
+{eec111gp=3.25; eec111g="B";}
+else if(eec111sc >=60)
+{eec111gp=3.00; eec111g="BC";}
+else if(eec111sc >=55)
+{eec111gp=2.75; eec111g="C"} 
+else if(eec111sc >=50)
+{eec111gp=2.50; eec111g="CD";
+} else if( eec111sc >=45) 
+{eec111gp=2.25; eec111g="D";}
+else if( eec111sc >=40) 
+{eec111gp=2.00; eec111g="P";}
+else if( eec111sc >=30) 
+{eec111gp=1.50; eec111g="F3";}
+else if( eec111sc >=20) 
+{eec111gp=1.00; eec111g="F2";} 
+else if( eec111sc >=10) 
+{eec111gp=0.50; eec111g="F1";}
+else if( eec111sc >=0) 
+{eec111gp=0.00; eec111g="F";}
+
+var eec112gp="";
+
+if(eec112sc >= 75) 
+{
+eec112gp=4.00; eec112g="A"; }
+else if(eec112sc >= 70) {
+eec112gp=3.50; eec112g="AB";}
+else if(eec112sc >=65)
+{eec112gp=3.25; eec112g="B";}
+else if(eec112sc >=60)
+{eec112gp=3.00; eec112g="BC";}
+else if(eec112sc >=55)
+{eec112gp=2.75; eec112g="C"} 
+else if(eec112sc >=50)
+{eec112gp=2.50; eec112g="CD";
+} else if( eec112sc >=45) 
+{eec112gp=2.25; eec112g="D";}
+else if( eec112sc >=40) 
+{eec112gp=2.00; eec112g="P";}
+else if( eec112sc >=30) 
+{eec112gp=1.50; eec112g="F3";}
+else if( eec112sc >=20) 
+{eec112gp=1.00; eec112g="F2";} 
+else if( eec112sc >=10) 
+{eec112gp=0.50; eec112g="F1";}
+else if( eec112sc >=0) 
+{eec112gp=0.00; eec112g="F";}
+
+
+var eec114gp="";
+
+if(eec114sc >= 75) 
+{
+eec114gp=4.00; eec114g="A"; }
+else if(eec114sc >= 70) {
+eec114gp=3.50; eec114g="AB";}
+else if(eec114sc >=65)
+{eec114gp=3.25; eec114g="B";}
+else if(eec114sc >=60)
+{eec114gp=3.00; eec114g="BC";}
+else if(eec114sc >=55)
+{eec114gp=2.75; eec114g="C"} 
+else if(eec114sc >=50)
+{eec114gp=2.50; eec114g="CD";
+} else if( eec114sc >=45) 
+{eec114gp=2.25; eec114g="D";}
+else if( eec114sc >=40) 
+{eec114gp=2.00; eec114g="P";}
+else if( eec114sc >=30) 
+{eec114gp=1.50; eec114g="F3";}
+else if( eec114sc >=20) 
+{eec114gp=1.00; eec114g="F2";} 
+else if( eec114sc >=10) 
+{eec114gp=0.50; eec114g="F1";}
+else if( eec114sc >=0) 
+{eec114gp=0.00; eec114g="F";}
+
+var eec115gp="";
+if(eec115sc >= 75) 
+{
+eec115gp=4.00; eec115g="A"; }
+else if(eec115sc >= 70) {
+eec115gp=3.50; eec115g="AB";}
+else if(eec115sc >=65)
+{eec115gp=3.25; eec115g="B";}
+else if(eec115sc >=60)
+{eec115gp=3.00; eec115g="BC";}
+else if(eec115sc >=55)
+{eec115gp=2.75; eec115g="C"} 
+else if(eec115sc >=50)
+{eec115gp=2.50; eec115g="CD";
+} else if( eec115sc >=45) 
+{eec115gp=2.25; eec115g="D";}
+else if( eec115sc >=40) 
+{eec115gp=2.00; eec115g="P";}
+else if( eec115sc >=30) 
+{eec115gp=1.50; eec115g="F3";}
+else if( eec115sc >=20) 
+{eec115gp=1.00; eec115g="F2";} 
+else if( eec115sc >=10) 
+{eec115gp=0.50; eec115g="F1";}
+else if( eec115sc >=0) 
+{eec115gp=0.00; eec115g="F";}
+
+var eec117gp="";
+if(eec117sc >= 75) 
+{
+eec117gp=4.00; eec117g="A"; }
+else if(eec117sc >= 70) {
+eec117gp=3.50; eec117g="AB";}
+else if(eec117sc >=65)
+{eec117gp=3.25; eec117g="B";}
+else if(eec117sc >=60)
+{eec117gp=3.00; eec117g="BC";}
+else if(eec117sc >=55)
+{eec117gp=2.75; eec117g="C"} 
+else if(eec117sc >=50)
+{eec117gp=2.50; eec117g="CD";
+} else if( eec117sc >=45) 
+{eec117gp=2.25; eec117g="D";}
+else if( eec117sc >=40) 
+{eec117gp=2.00; eec117g="P";}
+else if( eec117sc >=30) 
+{eec117gp=1.50; eec117g="F3";}
+else if( eec117sc >=20) 
+{eec117gp=1.00; eec117g="F2";} 
+else if( eec117sc >=10) 
+{eec117gp=0.50; eec117g="F1";}
+else if( eec117sc >=0) 
+{eec117gp=0.00; eec117g="F";}
+
+var gns101value=gns101gp*2;
+var mth112value=mth112gp*2;
+var mec111value=mec111gp*1;
+var mec122value=mec122gp*2;
+var eec111value=eec111gp*2;
+var eec112value=eec112gp*2;
+var eec114value=eec114gp*2;
+var eec112value=eec112gp*2;
+var eec115value=eec115gp*2;
+var eec117value=eec117gp*2;
+var totalvalue=gns101value+mth112value+mec111value+mec122value+eec111value+eec112value+eec114value+eec115value+eec117value;
+var gp=totalvalue/17;
+document.getElementById("display").innerHTML="Grade Point:  "+gp; alert("Your Gp is " +gp);
+
+document.getElementById("gns101g").innerHTML=gns101g;
+document.getElementById("mth112g").innerHTML=mth112g;
+document.getElementById("mec111g").innerHTML=mec111g;
+document.getElementById("mec122g").innerHTML=mec122g;
+document.getElementById("eec111g").innerHTML=eec111g;
+document.getElementById("eec112g").innerHTML=eec112g;
+document.getElementById("eec114g").innerHTML=eec114g;
+document.getElementById("eec115g").innerHTML=eec115g;
+document.getElementById("eec117g").innerHTML=eec117g;
+document.getElementById("gns101gp").innerHTML=gns101gp;
+document.getElementById("mth112gp").innerHTML=mth112gp;
+document.getElementById("mec111gp").innerHTML=mec111gp;
+document.getElementById("mec122gp").innerHTML=mec122gp;
+document.getElementById("eec111gp").innerHTML=eec111gp;
+document.getElementById("eec112gp").innerHTML=eec112gp;
+document.getElementById("eec114gp").innerHTML=eec114gp;
+document.getElementById("eec115gp").innerHTML=eec115gp;
+document.getElementById("eec117gp").innerHTML=eec117gp;
+
+}
+</script>
+<style> 
+body{margin:0px; padding:0px; background-image:url(images/bgmage.png); background-size:100% 924px; background-repeat:norepeat; width:100%; overflow:scroll;}
+#header{background-color:#660033; font-family:arial black; color:white; padding:0px;}
+#icon{position:fixed;z-index:1;}
+#data{background-color:grey;font-family:comic sans ms; border-radius:15px; width:100%;}
+.action{width:80%; font-family:arial black; color:violet; height:40px; font-size:100%; background-color:#660033; border:0px; border-radius:25px;} #content{margin-top:5%; width:90%; background-color:violet; border:25px dotted black; border-color:navy; border-radius:20px; opacity:0.92;} table{table, td, th {
+    border: 0px solid white; 
+}  #gptable {font-size:10%; color:navy; width:100%;  background-color:violet; border:25px dotted black; border-color:navy; border-radius:20px; opacity:0.92; overflow:scroll;}
+td {text-align:left;}
+} #footer{background-color:transparent; font-family:comic sans ms;}
+.field{width:30px; background-color:transparent; border:0px; color:navy; font-family:arial black;}
+.result{background-color:grey; color:navy; font-family:arial black; width:100%;}
+
+</style>
+</head>
+<body onload="profile()"> <span id="icon"> <img src="images/icono.png" width="30%"> </span>
+<center>
+<div id="header">  <img src="images/headercon.png" width="50%">
+</div>
+<div id="content"> <div id="data"> <table border=2> <tr> <td>
+Name: <span id="nameme">Okorie Victor </span> <br> Reg No: Fpo/nd/ee/015/<span id="regina">142 </span> <br> Department:<span id="departna">Computer Engineering </span> <br>  
+</td> <td>  <img src="images/userphoto.png" width="50%" id="usermage">  </td> </tr>  </table> </div> <div id="display" style="background-color:navy; font-family:arial black; color:violet"> 
+</div> </div>
+<div id="gptable"> 
+<table border="1px" style="font-size:100%; background-color:violet; border:5px solid black; border-color:navy; border-radius:20px; opacity:0.92; width:100%;">
+<tr> <th> COURSE </th> <th> SCORE </th> <th> GRADE </th> <th>GRADE POINT </th> <th>  CREDIT UNIT
+</tr>
+<tr> <td> GNS 101 </td> <td> <input type="text" id="gns101score" class="field" onblur="calscore()" autofocus/>  </td> <td> <span id="gns101g"> </span> </td> <td> <span id="gns101gp">  </span> </td> <td><span id="gns101cu" class="creditunuits"> 2 </span> </td>
+<tr> <td> MTH 112 </td> <td> <input type="text" id="mth112score" class="field" onfocus="calscore()"/> </td> <td> <span id="mth112g"> </span> </td> <td> <span id="mth112gp"> </span> </td> <td><span id="mth112cu" class="creditunuits"> 2 </span> </td> 
+</tr>
+<tr> <td> MEC 111 </td> <td> <input type="text" id="mec111score" class="field" onfocus="calscore()"/> </td> <td> <span id="mec111g"> </span> </td> <td> <span id="mec111gp"> </span> </td> <td> <span id="mec111cu" class="creditunuits"> 1 </span> </td> 
+</tr>
+<tr> <td> MEC 122 </td> <td><input type="text" id="mec122score" class="field" onfocus="calscore()"/> </td> <td> <span id="mec122g"> </span> </td> <td> <span id="mec122gp"> </span> </td> <td> <span id="mec122cu" class="creditunuits"> 2 </span></td> 
+</tr>
+<tr> <td> EEC 111 </td> <td> <input type="text" id="eec111score" class="field" onfocus="calscore()"/> </td> <td> <span id="eec111g"> </span> </td> <td> <span id="eec111gp"> </span> </td> <td> <span id="eec111cu" class="creditunuits"> 2 </span></td> 
+</tr><tr> <td> EEC 112 </td> <td> <input type="text" id="eec112score" class="field" onfocus="calscore()"/> </td> <td> <span id="eec112g"> </span> </td> <td> <span id="eec112gp"> </span> </td> <td> <span id="eec112cu" class="creditunuits"> 2 </span></td> 
+</tr>
+
+<tr> <td> EEC 114 </td> <td> <input type="text" id="eec114score" class="field" onfocus="calscore()"/> </td> <td> <span id="eec114g"> </span> </td> <td> <span id="eec114gp"> </span> </td> <td> <span id="eec114cu" class="creditunuits">2 </span> </td> 
+</tr>
+<tr> <td> EEC 115 </td> <td> <input type="text" id="eec115score" class="field" onfocus="calscore()"/> </td> <td> <span id="eec115g"> </span> </td> <td> <span id="eec115gp"> </span> </td> <td> <span id="eec115cu" class="creditunuits"> 2 </span></td> 
+</tr>
+<tr> <td> EEC 117 </td> <td> <input type="text" id="eec117score" class="field" onfocus="calscore()"/> </td> <td> <span id="eec117g"> </span> </td> <td> <span id="eec117gp"> </span> </td> <td> <span id="eec111cu" class="creditunuits"> 2 </span> </td> 
+</tr>
+</table>
+
+</div>   <input type="button" value="Calculate GP" onclick="mygp()" style="width:80%; background-color:#660033; height:40px; border-radius:10px; border:0px; color:violet; font-size:100%; font-family:arial black;">
+
+  <span id="footer"> <marquee direction="left" > For your app development call +2348142337936 or +2348026315772 or email:vikaxnet@gmail.com Website:vikaxnet.wordpress.com </marquee> </span> </div>
+</center>
+</body>
+</html>
