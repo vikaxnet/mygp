@@ -25,8 +25,9 @@ localStorage.setItem("myyear", year);
 localStorage.setItem("mylevel", levela);
 localStorage.setItem("mydept", department);
 localStorage.setItem("mysn", sno);
-
-window.location=("gptable.html");
+if(department=="cte") {
+window.location=("gptable.html");} else if(department=="eee") {
+window.location=("eeend1a.html"); }
 }
 </script>
 </head>
@@ -38,7 +39,7 @@ window.location=("gptable.html");
 Enter Your Information to Continue.
 </h1> 
 <form id="get"> <b>
-Full Name: </b> <br> <input type="text" Class="box" id="name"> <br> <b> Reg No:<span id="regoo"> </span> </b> <br> Programe: <select Class="box" name="programe" id="prog"> <option value="ND"> ND </option>  </select> <br>  Level: <select Class="box" name="level" id="level"> <option value="nd1"> ND 1  </select> <br> Year:<select Class="box" name="year" id="year"> <option value="2015"> 015  </select> <br> Department:<select Class="box" name="department" id="dept"> <option value="cte"> Computer Engineering </select> <br> Serial No: <input type="text" name="sno" style="width:25px;" id="sn">
+Full Name: </b> <br> <input type="text" Class="box" id="name" required /> <br> <b> Reg No:<span id="regoo"> fpo/ </span> </b> <br> Programe: <select Class="box" name="programe" id="prog"> <option value="ND"> ND </option> </select> <br>  Level: <select Class="box" name="level" id="level"> <option value="nd1"> ND 1  </select> <br> Year:<select Class="box" name="year" id="year"> <option value="2015"> 015  </select> <br> Department:<select Class="box" name="department" id="dept"> <option value="cte"> Computer Engineering </option>  <option value="eee"> Electrical Electronic Engineering </option> </select> <br> Serial No: <input type="number" name="sno" style="width:45px;" id="sn">
 <br> <br> <br> <input type="button" value="CONTINUE" class="action" onclick="next()">
 </form> <span id="footer"> <marquee direction="left"> For your app development call +2348142337936 or +2348026315772 or email:vikaxnet@gmail.com Website:vikaxnet.wordpress.com </marquee> </span> </div>
 </center>
