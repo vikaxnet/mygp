@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+<head>
+<title>
+My Gp Calculator
+</title>
+<meta name="viewport content="width=device-width, initial-scale=1">
+<script> function profile() { document.getElementById("nameme").innerHTML = localStorage.getItem("name");
+var x=localStorage.getItem("mydept"); var r=localStorage.getItem("mysn"); var xi=""; if (x=="cte") {xi="Computer Engineering";} else if (x=="eee") {xi="Electrical Electronic Engineering";} else if (x=="mcom") {xi="MASS COMMUNICATION";} document.getElementById("departna").innerHTML=xi;
+document.getElementById("regina").innerHTML=r;}
+function mygp() {
+var gns101sc=document.getElementById("gns101score").value;
+var gns127sc=document.getElementById("gns127score").value;
+var mac111sc=document.getElementById("mac111score").value;
+var mac112sc=document.getElementById("mac112score").value;
+var mac113sc=document.getElementById("mac113score").value; 
+var mac114sc=document.getElementById("mac114score").value;
+var mac115sc=document.getElementById("mac115score").value;
+var mac116sc=document.getElementById("mac116score").value;
+var mac117sc=document.getElementById("mac117score").value;
+var mkt111sc=document.getElementById("mkt111score").value;
+var gns101gp="";
+
+if(gns101sc >= 75) 
+{
+gns101gp=4.00; gns101g="A"; }
+else if(gns101sc >= 70) {
+gns101gp=3.50; gns101g="AB";}
+else if(gns101sc >=65)
+{gns101gp=3.25; gns101g="B";}
+else if(gns101sc >=60)
+{gns101gp=3.00; gns101g="BC";}
+else if(gns101sc >=55)
+{gns101gp=2.75; gns101g="C"} 
+else if(gns101sc >=50)
+{gns101gp=2.50; gns101g="CD";
+} else if( gns101sc >=45) 
+{gns101gp=2.25; gns101g="D";}
+else if( gns101sc >=40) 
+{gns101gp=2.00; gns101g="P";}
+else if( gns101sc >=30) 
+{gns101gp=1.50; gns101g="F3";}
+else if( gns101sc >=20) 
+{gns101gp=1.00; gns101g="F2";} 
+else if( gns101sc >=10) 
+{gns101gp=0.50; gns101g="F1";}
+else if( gns101sc >=0) 
+{gns101gp=0.00; gns101g="F";}
+
+
+var gns127gp="";
+
+if(gns127sc >= 75) 
+{
+gns127gp=4.00; gns127g="A"; }
+else if(gns127sc >= 70) {
+gns127gp=3.50; gns127g="AB";}
+else if(gns127sc >=65)
+{gns127gp=3.25; gns127g="B";}
+else if(gns127sc >=60)
+{gns127gp=3.00; gns127g="BC";}
+else if(gns127sc >=55)
+{gns127gp=2.75; gns127g="C"} 
+else if(gns127sc >=50)
+{gns127gp=2.50; gns127g="CD";
+} else if( gns127sc >=45) 
+{gns127gp=2.25; gns127g="D";}
+else if( gns127sc >=40) 
+{gns127gp=2.00; gns127g="P";}
+else if( gns127sc >=30) 
+{gns127gp=1.50; gns127g="F3";}
+else if( gns127sc >=20) 
+{gns127gp=1.00; gns127g="F2";} 
+else if( gns127sc >=10) 
+{gns127gp=0.50; gns127g="F1";}
+else if( gns127sc >=0) 
+{gns127gp=0.00; gns127g="F";}
+
+
+var mac111gp="";
+
+if(mac111sc >= 75) 
+{
+mac111gp=4.00; mac111g="A"; }
+else if(mac111sc >= 70) {
+mac111gp=3.50; mac111g="AB";}
+else if(mac111sc >=65)
+{mac111gp=3.00; mac111g="B";}
+else if(mac111sc >=60)
+{mac111gp=3.50; mac111g="BC";}
+else if(mac111sc >=55)
+{mac111gp=2.27; mac111g="C"} 
+else if(mac111sc >=50)
+{mac111gp=2.50; mac111g="CD";
+} else if( mac111sc >=45) 
+{mac111gp=2.25; mac111g="D";}
+else if( mac111sc >=40) 
+{mac111gp=2.00; mac111g="P";}
+else if( mac111sc >=30) 
+{mac111gp=1.50; mac111g="F3";}
+else if( mac111sc >=20) 
+{mac111gp=1.00; mac111g="F2";} 
+else if( mac111sc >=10) 
+{mac111gp=0.50; mac111g="F1";}
+else if( mac111sc >=0) 
+{mac111gp=0.00; mac111g="F";}
+
+
+var mac112gp="";
+
+if(mac112sc >= 75) 
+{
+mac112gp=4.00; mac112g="A"; }
+else if(mac112sc >= 70) {
+mac112gp=3.50; mac112g="AB";}
+else if(mac112sc >=65)
+{mac112gp=3.25; mac112g="B";}
+else if(mac112sc >=60)
+{mac112gp=3.00; mac112g="BC";}
+else if(mac112sc >=55)
+{mac112gp=2.75; mac112g="C"} 
+else if(mac112sc >=50)
+{mac112gp=2.50; mac112g="CD";
+} else if( mac112sc >=45) 
+{mac112gp=2.25; mac112g="D";}
+else if( mac112sc >=40) 
+{mac112gp=2.00; mac112g="P";}
+else if( mac112sc >=30) 
+{mac112gp=1.50; mac112g="F3";}
+else if( mac112sc >=20) 
+{mac112gp=1.00; mac112g="F2";} 
+else if( mac112sc >=10) 
+{mac112gp=0.50; mac112g="F1";}
+else if( mac112sc >=0) 
+{mac112gp=0.00; mac112g="F";}
+
+var mac113gp="";
+
+if(mac113sc >= 75) 
+{
+mac113gp=4.00; mac113g="A"; }
+else if(mac113sc >= 70) {
+mac113gp=3.50; mac113g="AB";}
+else if(mac113sc >=65)
+{mac113gp=3.25; mac113g="B";}
+else if(mac113sc >=60)
+{mac113gp=3.00; mac113g="BC";}
+else if(mac113sc >=55)
+{mac113gp=2.75; mac113g="C"} 
+else if(mac113sc >=50)
+{mac113gp=2.50; mac113g="CD";
+} else if( mac113sc >=45) 
+{mac113gp=2.25; mac113g="D";}
+else if( mac113sc >=40) 
+{mac113gp=2.00; mac113g="P";}
+else if( mac113sc >=30) 
+{mac113gp=1.50; mac113g="F3";}
+else if( mac113sc >=20) 
+{mac113gp=1.00; mac113g="F2";} 
+else if( mac113sc >=10) 
+{mac113gp=0.50; mac113g="F1";}
+else if( mac113sc >=0) 
+{mac113gp=0.00; mac113g="F";}
+
+var mac115gp="";
+
+if(mac115sc >= 75) 
+{
+mac115gp=4.00; mac115g="A"; }
+else if(mac115sc >= 70) {
+mac115gp=3.50; mac115g="AB";}
+else if(mac115sc >=65)
+{mac115gp=3.25; mac115g="B";}
+else if(mac115sc >=60)
+{mac115gp=3.00; mac115g="BC";}
+else if(mac115sc >=55)
+{mac115gp=2.75; mac115g="C"} 
+else if(mac115sc >=50)
+{mac115gp=2.50; mac115g="CD";
+} else if( mac115sc >=45) 
+{mac115gp=2.25; mac115g="D";}
+else if( mac115sc >=40) 
+{mac115gp=2.00; mac115g="P";}
+else if( mac115sc >=30) 
+{mac115gp=1.50; mac115g="F3";}
+else if( mac115sc >=20) 
+{mac115gp=1.00; mac115g="F2";} 
+else if( mac115sc >=10) 
+{mac115gp=0.50; mac115g="F1";}
+else if( mac115sc >=0) 
+{mac115gp=0.00; mac115g="F";}
+
+
+var mac114gp="";
+
+if(mac114sc >= 75) 
+{
+mac114gp=4.00; mac114g="A"; }
+else if(mac114sc >= 70) {
+mac114gp=3.50; mac114g="AB";}
+else if(mac114sc >=65)
+{mac114gp=3.25; mac114g="B";}
+else if(mac114sc >=60)
+{mac114gp=3.00; mac114g="BC";}
+else if(mac114sc >=55)
+{mac114gp=2.75; mac114g="C"} 
+else if(mac114sc >=50)
+{mac114gp=2.50; mac114g="CD";
+} else if( mac114sc >=45) 
+{mac114gp=2.25; mac114g="D";}
+else if( mac114sc >=40) 
+{mac114gp=2.00; mac114g="P";}
+else if( mac114sc >=30) 
+{mac114gp=1.50; mac114g="F3";}
+else if( mac114sc >=20) 
+{mac114gp=1.00; mac114g="F2";} 
+else if( mac114sc >=10) 
+{mac114gp=0.50; mac114g="F1";}
+else if( mac114sc >=0) 
+{mac114gp=0.00; mac114g="F";}
+
+var mac116gp="";
+if(mac116sc >= 75) 
+{
+mac116gp=4.00; mac116g="A"; }
+else if(mac116sc >= 70) {
+mac116gp=3.50; mac116g="AB";}
+else if(mac116sc >=65)
+{mac116gp=3.25; mac116g="B";}
+else if(mac116sc >=60)
+{mac116gp=3.00; mac116g="BC";}
+else if(mac116sc >=55)
+{mac116gp=2.75; mac116g="C"} 
+else if(mac116sc >=50)
+{mac116gp=2.50; mac116g="CD";
+} else if( mac116sc >=45) 
+{mac116gp=2.25; mac116g="D";}
+else if( mac116sc >=40) 
+{mac116gp=2.00; mac116g="P";}
+else if( mac116sc >=30) 
+{mac116gp=1.50; mac116g="F3";}
+else if( mac116sc >=20) 
+{mac116gp=1.00; mac116g="F2";} 
+else if( mac116sc >=10) 
+{mac116gp=0.50; mac116g="F1";}
+else if( mac116sc >=0) 
+{mac116gp=0.00; mac116g="F";}
+
+var mac117gp=""; mac117g="";
+if(mac117sc >= 75) 
+{
+mac117gp=4.00; mac117g="A"; }
+else if(mac117sc >= 70) {
+mac117gp=3.50; mac117g="AB";}
+else if(mac117sc >=65)
+{mac117gp=3.25; mac117g="B";}
+else if(mac117sc >=60)
+{mac117gp=3.00; mac117g="BC";}
+else if(mac117sc >=55)
+{mac117gp=2.75; mac117g="C"} 
+else if(mac117sc >=50)
+{mac117gp=2.50; mac117g="CD";
+} else if( mac117sc >=45) 
+{mac117gp=2.25; mac117g="D";}
+else if( mac117sc >=40) 
+{mac117gp=2.00; mac117g="P";}
+else if( mac117sc >=30) 
+{mac117gp=1.50; mac117g="F3";}
+else if( mac117sc >=20) 
+{mac117gp=1.00; mac117g="F2";} 
+
+var mkt111gp="";
+if(mkt111sc >= 75) 
+{
+mkt111gp=4.00; mkt111g="A"; }
+else if(mkt111sc >= 70) {
+mkt111gp=3.50; mkt111g="AB";}
+else if(mkt111sc >=65)
+{mkt111gp=3.25; mkt111g="B";}
+else if(mkt111sc >=60)
+{mkt111gp=3.00; mkt111g="BC";}
+else if(mkt111sc >=55)
+{mkt111gp=2.75; mkt111g="C"} 
+else if(mkt111sc >=50)
+{mkt111gp=2.50; mkt111g="CD";
+} else if( mkt111sc >=45) 
+{mkt111gp=2.25; mkt111g="D";}
+else if( mkt111sc >=40) 
+{mkt111gp=2.00; mkt111g="P";}
+else if( mkt111sc >=30) 
+{mkt111gp=1.50; mkt111g="F3";}
+else if( mkt111sc >=20) 
+{mkt111gp=1.00; mkt111g="F2";} 
+else if( mkt111sc >=10) 
+{mkt111gp=0.50; mkt111g="F1";}
+else if( mkt111sc >=0) 
+{mkt111gp=0.00; mkt111g="F";}
+else if( mkt111sc >=10) 
+{mkt111gp=0.50; mkt111g="F1";}
+else if( mkt111sc >=0) 
+{mkt111gp=0.00; mkt111g="F";}
+
+var gns101value=gns101gp*2;
+var gns127value=gns127gp*2;
+var mac111value=mac111gp*2;
+var mac112value=mac112gp*2;
+var mac113value=mac113gp*3;
+var mac114value=mac114gp*3;
+var mac115value=mac115gp*3;
+var mac116value=mac116gp*2;
+var mac117value=mac117gp*2;
+var mkt111value=mkt111gp*2;
+var totalvalue=gns101value+gns127value+mac111value+mac112value+mac113value+mac114value+mac116value+mac117value+mkt111value;
+var gp=totalvalue/23;
+document.getElementById("display").innerHTML="Grade Point:  "+gp; alert("Your Gp is " +gp);
+
+document.getElementById("gns101g").innerHTML=gns101g;
+document.getElementById("gns127g").innerHTML=gns127g;
+document.getElementById("mac111g").innerHTML=mac111g;
+document.getElementById("mac112g").innerHTML=mac112g;
+document.getElementById("mac113g").innerHTML=mac113g;
+document.getElementById("mac115g").innerHTML=mac115g;
+document.getElementById("mac114g").innerHTML=mac114g;
+document.getElementById("mac116g").innerHTML=mac116g;
+document.getElementById("mac117g").innerHTML=mac117g;
+document.getElementById("mkt111g").innerHTML=mkt111g;
+document.getElementById("gns101gp").innerHTML=gns101gp;
+document.getElementById("gns127gp").innerHTML=gns127gp;
+document.getElementById("mac111gp").innerHTML=mac111gp;
+document.getElementById("mac112gp").innerHTML=mac112gp;
+document.getElementById("mac113gp").innerHTML=mac113gp;
+document.getElementById("mac115gp").innerHTML=mac115gp;
+document.getElementById("mac114gp").innerHTML=mac114gp;
+document.getElementById("mac116gp").innerHTML=mac116gp;
+document.getElementById("mac117gp").innerHTML=mac117gp;
+document.getElementById("mkt111gp").innerHTML=mkt111gp;
+
+}
+</script>
+<style> 
+body{margin:0px; padding:0px; background-image:url(images/bgmage.png); background-size:100% 924px; background-repeat:norepeat; width:100%; overflow:scroll;}
+#header{background-color:#660033; font-family:arial black; color:white; padding:0px;}
+#icon{position:fixed;z-index:1;}
+#data{background-color:grey;font-family:comic sans ms; border-radius:15px; width:100%;}
+.action{width:80%; font-family:arial black; color:violet; height:40px; font-size:100%; background-color:#660033; border:0px; border-radius:25px;} #content{margin-top:5%; width:90%; background-color:violet; border:25px dotted black; border-color:navy; border-radius:20px; opacity:0.92;} table{table, td, th {
+    border: 0px solid white; 
+}  #gptable {font-size:10%; color:navy; width:100%;  background-color:violet; border:25px dotted black; border-color:navy; border-radius:20px; opacity:0.92; overflow:scroll;}
+td {text-align:left;}
+} #footer{background-color:transparent; font-family:comic sans ms;}
+.field{width:30px; background-color:transparent; border:0px; color:navy; font-family:arial black;}
+.result{background-color:grey; color:navy; font-family:arial black; width:100%;}
+
+</style>
+</head>
+<body onload="profile()"> <span id="icon"> <img src="images/icono.png" width="30%"> </span>
+<center>
+<div id="header">  <img src="images/headercon.png" width="50%">
+</div>
+<div id="content"> <div id="data"> <table border=2> <tr> <td>
+Name: <span id="nameme">Okorie Victor </span> <br> Reg No: Fpo/nd/mac/015/<span id="regina">142 </span> <br> Department:<span id="departna">Computer Engineering </span> <br>  
+</td> <td>  <img src="images/userphoto.png" width="50%" id="usermage">  </td> </tr>  </table> </div> <div id="display" style="background-color:navy; font-family:arial black; color:violet"> 
+</div> </div>
+<div id="gptable"> 
+<table border="1px" style="font-size:100%; background-color:violet; border:5px solid black; border-color:navy; border-radius:20px; opacity:0.92; width:100%;">
+<tr> <th> COURSE </th> <th> SCORE </th> <th> GRADE </th> <th>GRADE POINT </th> <th>  CREDIT UNIT
+</tr>
+<tr> <td> GNS 101 </td> <td> <input type="text" id="gns101score" class="field" onblur="calscore()" autofocus/>  </td> <td> <span id="gns101g"> </span> </td> <td> <span id="gns101gp">  </span> </td> <td><span id="gns101cu" class="creditunuits"> 2 </span> </td>
+<tr> <td> GNS 127 </td> <td> <input type="text" id="gns127score" class="field" onfocus="calscore()"/> </td> <td> <span id="gns127g"> </span> </td> <td> <span id="gns127gp"> </span> </td> <td><span id="gns127cu" class="creditunuits"> 2 </span> </td> 
+</tr>
+<tr> <td> MAC 111 </td> <td> <input type="text" id="mac111score" class="field" onfocus="calscore()"/> </td> <td> <span id="mac111g"> </span> </td> <td> <span id="mac111gp"> </span> </td> <td> <span id="mac111cu" class="creditunuits"> 2 </span> </td> 
+</tr>
+<tr> <td> MAC 112 </td> <td><input type="text" id="mac112score" class="field" onfocus="calscore()"/> </td> <td> <span id="mac112g"> </span> </td> <td> <span id="mac112gp"> </span> </td> <td> <span id="mac112cu" class="creditunuits"> 2 </span></td> 
+</tr>
+<tr> <td> MAC 113 </td> <td> <input type="text" id="mac113score" class="field" onfocus="calscore()"/> </td> <td> <span id="mac113g"> </span> </td> <td> <span id="mac113gp"> </span> </td> <td> <span id="mac113cu" class="creditunuits"> 2 </span></td> 
+</tr><tr> <td> MAC 114 </td> <td> <input type="text" id="mac114score" class="field" onfocus="calscore()"/> </td> <td> <span id="mac114g"> </span> </td> <td> <span id="mac114gp"> </span> </td> <td> <span id="mac114cu" class="creditunuits"> 3 </span></td> 
+</tr>
+
+<tr> <td> MAC 115 </td> <td> <input type="text" id="mac115score" class="field" onfocus="calscore()"/> </td> <td> <span id="mac115g"> </span> </td> <td> <span id="mac115gp"> </span> </td> <td> <span id="mac115cu" class="creditunuits">3 </span> </td> 
+</tr>
+<tr> <td> MAC 116 </td> <td> <input type="text" id="mac116score" class="field" onfocus="calscore()"/> </td> <td> <span id="mac116g"> </span> </td> <td> <span id="mac116gp"> </span> </td> <td> <span id="mac116cu" class="creditunuits"> 2 </span></td> 
+</tr>
+<tr> <td> MAC 117 </td> <td> <input type="text" id="mac117score" class="field" onfocus="calscore()"/> </td> <td> <span id="mac117g"> </span> </td> <td> <span id="mac117gp"> </span> </td> <td> <span id="mac117cu" class="creditunuits"> 2 </span> </td> 
+</tr><tr> <td> MKT 111 </td> <td> <input type="text" id="mkt111score" class="field" onfocus="calscore()"/> </td> <td> <span id="mkt111g"> </span> </td> <td> <span id="mkt111gp"> </span> </td> <td> <span id="mkt111cu" class="creditunuits"> 2 </span> </td> 
+</tr>
+</table>
+
+</div>   <input type="button" value="Calculate GP" onclick="mygp()" style="width:80%; background-color:#660033; height:40px; border-radius:10px; border:0px; color:violet; font-size:100%; font-family:arial black;">
+
+  <span id="footer"> <marquee direction="left" > For your app development call +2348142337936 or +2348026315772 or email:vikaxnet@gmail.com Website:vikaxnet.wordpress.com </marquee> </span> </div>
+</center>
+</body>
+</html>
