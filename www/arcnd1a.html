@@ -1,0 +1,494 @@
+<!doctype html>
+<html>
+<head>
+<title>
+My Gp Calculator
+</title>
+<meta name="viewport content="width=device-width, initial-scale=1">
+<script> function profile() { document.getElementById("nameme").innerHTML = localStorage.getItem("name");
+var x=localStorage.getItem("mydept"); var r=localStorage.getItem("mysn"); var xi=""; if (x=="cte") {xi="Computer Engineering";} else if (x=="eee") {xi="Electrical Electronic Engineering";} else if (x=="arc") {xi="Architecture";} document.getElementById("departna").innerHTML=xi;
+document.getElementById("regina").innerHTML=r;}
+function mygp() {
+var gns101sc=document.getElementById("gns101score").value;
+var gns127sc=document.getElementById("gns127score").value;
+var arc111sc=document.getElementById("arc111score").value;
+var arc112sc=document.getElementById("arc112score").value;
+var arc113sc=document.getElementById("arc113score").value; 
+var mec101sc=document.getElementById("mec101score").value;
+var sug101sc=document.getElementById("sug101score").value;
+var phe111sc=document.getElementById("phe111score").value;
+var bch111sc=document.getElementById("bch111score").value;
+var bph111sc=document.getElementById("bph111score").value;
+var bqs113sc=document.getElementById("bqs113score").value;
+var gcs101sc=document.getElementById("gcs101score").value;
+var mth111sc=document.getElementById("mth111score").value;
+var gns101gp="";
+
+if(gns101sc >= 75) 
+{
+gns101gp=4.00; gns101g="A"; }
+else if(gns101sc >= 70) {
+gns101gp=3.50; gns101g="AB";}
+else if(gns101sc >=65)
+{gns101gp=3.25; gns101g="B";}
+else if(gns101sc >=60)
+{gns101gp=3.00; gns101g="BC";}
+else if(gns101sc >=55)
+{gns101gp=2.75; gns101g="C"} 
+else if(gns101sc >=50)
+{gns101gp=2.50; gns101g="CD";
+} else if( gns101sc >=45) 
+{gns101gp=2.25; gns101g="D";}
+else if( gns101sc >=40) 
+{gns101gp=2.00; gns101g="P";}
+else if( gns101sc >=30) 
+{gns101gp=1.50; gns101g="F3";}
+else if( gns101sc >=20) 
+{gns101gp=1.00; gns101g="F2";} 
+else if( gns101sc >=10) 
+{gns101gp=0.50; gns101g="F1";}
+else if( gns101sc >=0) 
+{gns101gp=0.00; gns101g="F";}
+
+
+var gns127gp="";
+
+if(gns127sc >= 75) 
+{
+gns127gp=4.00; gns127g="A"; }
+else if(gns127sc >= 70) {
+gns127gp=3.50; gns127g="AB";}
+else if(gns127sc >=65)
+{gns127gp=3.25; gns127g="B";}
+else if(gns127sc >=60)
+{gns127gp=3.00; gns127g="BC";}
+else if(gns127sc >=55)
+{gns127gp=2.75; gns127g="C"} 
+else if(gns127sc >=50)
+{gns127gp=2.50; gns127g="CD";
+} else if( gns127sc >=45) 
+{gns127gp=2.25; gns127g="D";}
+else if( gns127sc >=40) 
+{gns127gp=2.00; gns127g="P";}
+else if( gns127sc >=30) 
+{gns127gp=1.50; gns127g="F3";}
+else if( gns127sc >=20) 
+{gns127gp=1.00; gns127g="F2";} 
+else if( gns127sc >=10) 
+{gns127gp=0.50; gns127g="F1";}
+else if( gns127sc >=0) 
+{gns127gp=0.00; gns127g="F";}
+
+
+var arc111gp="";
+
+if(arc111sc >= 75) 
+{
+arc111gp=4.00; arc111g="A"; }
+else if(arc111sc >= 70) {
+arc111gp=3.50; arc111g="AB";}
+else if(arc111sc >=65)
+{arc111gp=3.00; arc111g="B";}
+else if(arc111sc >=60)
+{arc111gp=3.50; arc111g="BC";}
+else if(arc111sc >=55)
+{arc111gp=2.27; arc111g="C"} 
+else if(arc111sc >=50)
+{arc111gp=2.50; arc111g="CD";
+} else if( arc111sc >=45) 
+{arc111gp=2.25; arc111g="D";}
+else if( arc111sc >=40) 
+{arc111gp=2.00; arc111g="P";}
+else if( arc111sc >=30) 
+{arc111gp=1.50; arc111g="F3";}
+else if( arc111sc >=20) 
+{arc111gp=1.00; arc111g="F2";} 
+else if( arc111sc >=10) 
+{arc111gp=0.50; arc111g="F1";}
+else if( arc111sc >=0) 
+{arc111gp=0.00; arc111g="F";}
+
+
+var arc112gp="";
+
+if(arc112sc >= 75) 
+{
+arc112gp=4.00; arc112g="A"; }
+else if(arc112sc >= 70) {
+arc112gp=3.50; arc112g="AB";}
+else if(arc112sc >=65)
+{arc112gp=3.25; arc112g="B";}
+else if(arc112sc >=60)
+{arc112gp=3.00; arc112g="BC";}
+else if(arc112sc >=55)
+{arc112gp=2.75; arc112g="C"} 
+else if(arc112sc >=50)
+{arc112gp=2.50; arc112g="CD";
+} else if( arc112sc >=45) 
+{arc112gp=2.25; arc112g="D";}
+else if( arc112sc >=40) 
+{arc112gp=2.00; arc112g="P";}
+else if( arc112sc >=30) 
+{arc112gp=1.50; arc112g="F3";}
+else if( arc112sc >=20) 
+{arc112gp=1.00; arc112g="F2";} 
+else if( arc112sc >=10) 
+{arc112gp=0.50; arc112g="F1";}
+else if( arc112sc >=0) 
+{arc112gp=0.00; arc112g="F";}
+
+var arc113gp="";
+
+if(arc113sc >= 75) 
+{
+arc113gp=4.00; arc113g="A"; }
+else if(arc113sc >= 70) {
+arc113gp=3.50; arc113g="AB";}
+else if(arc113sc >=65)
+{arc113gp=3.25; arc113g="B";}
+else if(arc113sc >=60)
+{arc113gp=3.00; arc113g="BC";}
+else if(arc113sc >=55)
+{arc113gp=2.75; arc113g="C"} 
+else if(arc113sc >=50)
+{arc113gp=2.50; arc113g="CD";
+} else if( arc113sc >=45) 
+{arc113gp=2.25; arc113g="D";}
+else if( arc113sc >=40) 
+{arc113gp=2.00; arc113g="P";}
+else if( arc113sc >=30) 
+{arc113gp=1.50; arc113g="F3";}
+else if( arc113sc >=20) 
+{arc113gp=1.00; arc113g="F2";} 
+else if( arc113sc >=10) 
+{arc113gp=0.50; arc113g="F1";}
+else if( arc113sc >=0) 
+{arc113gp=0.00; arc113g="F";}
+
+var sug101gp="";
+
+if(sug101sc >= 75) 
+{
+sug101gp=4.00; sug101g="A"; }
+else if(sug101sc >= 70) {
+sug101gp=3.50; sug101g="AB";}
+else if(sug101sc >=65)
+{sug101gp=3.25; sug101g="B";}
+else if(sug101sc >=60)
+{sug101gp=3.00; sug101g="BC";}
+else if(sug101sc >=55)
+{sug101gp=2.75; sug101g="C"} 
+else if(sug101sc >=50)
+{sug101gp=2.50; sug101g="CD";
+} else if( sug101sc >=45) 
+{sug101gp=2.25; sug101g="D";}
+else if( sug101sc >=40) 
+{sug101gp=2.00; sug101g="P";}
+else if( sug101sc >=30) 
+{sug101gp=1.50; sug101g="F3";}
+else if( sug101sc >=20) 
+{sug101gp=1.00; sug101g="F2";} 
+else if( sug101sc >=10) 
+{sug101gp=0.50; sug101g="F1";}
+else if( sug101sc >=0) 
+{sug101gp=0.00; sug101g="F";}
+
+
+var mec101gp="";
+
+if(mec101sc >= 75) 
+{
+mec101gp=4.00; mec101g="A"; }
+else if(mec101sc >= 70) {
+mec101gp=3.50; mec101g="AB";}
+else if(mec101sc >=65)
+{mec101gp=3.25; mec101g="B";}
+else if(mec101sc >=60)
+{mec101gp=3.00; mec101g="BC";}
+else if(mec101sc >=55)
+{mec101gp=2.75; mec101g="C"} 
+else if(mec101sc >=50)
+{mec101gp=2.50; mec101g="CD";
+} else if( mec101sc >=45) 
+{mec101gp=2.25; mec101g="D";}
+else if( mec101sc >=40) 
+{mec101gp=2.00; mec101g="P";}
+else if( mec101sc >=30) 
+{mec101gp=1.50; mec101g="F3";}
+else if( mec101sc >=20) 
+{mec101gp=1.00; mec101g="F2";} 
+else if( mec101sc >=10) 
+{mec101gp=0.50; mec101g="F1";}
+else if( mec101sc >=0) 
+{mec101gp=0.00; mec101g="F";}
+
+var phe111gp="";
+if(phe111sc >= 75) 
+{
+phe111gp=4.00; phe111g="A"; }
+else if(phe111sc >= 70) {
+phe111gp=3.50; phe111g="AB";}
+else if(phe111sc >=65)
+{phe111gp=3.25; phe111g="B";}
+else if(phe111sc >=60)
+{phe111gp=3.00; phe111g="BC";}
+else if(phe111sc >=55)
+{phe111gp=2.75; phe111g="C"} 
+else if(phe111sc >=50)
+{phe111gp=2.50; phe111g="CD";
+} else if( phe111sc >=45) 
+{phe111gp=2.25; phe111g="D";}
+else if( phe111sc >=40) 
+{phe111gp=2.00; phe111g="P";}
+else if( phe111sc >=30) 
+{phe111gp=1.50; phe111g="F3";}
+else if( phe111sc >=20) 
+{phe111gp=1.00; phe111g="F2";} 
+else if( phe111sc >=10) 
+{phe111gp=0.50; phe111g="F1";}
+else if( phe111sc >=0) 
+{phe111gp=0.00; phe111g="F";}
+
+var bch111gp="";
+if(bch111sc >= 75) 
+{
+bch111gp=4.00; bch111g="A"; }
+else if(bch111sc >= 70) {
+bch111gp=3.50; bch111g="AB";}
+else if(bch111sc >=65)
+{bch111gp=3.25; bch111g="B";}
+else if(bch111sc >=60)
+{bch111gp=3.00; bch111g="BC";}
+else if(bch111sc >=55)
+{bch111gp=2.75; bch111g="C"} 
+else if(bch111sc >=50)
+{bch111gp=2.50; bch111g="CD";
+} else if( bch111sc >=45) 
+{bch111gp=2.25; bch111g="D";}
+else if( bch111sc >=40) 
+{bch111gp=2.00; bch111g="P";}
+else if( bch111sc >=30) 
+{bch111gp=1.50; bch111g="F3";}
+else if( bch111sc >=20) 
+{bch111gp=1.00; bch111g="F2";} 
+else if( bch111sc >=10) 
+{bch111gp=0.50; bch111g="F1";}
+else if( bch111sc >=0) 
+{bch111gp=0.00; bch111g="F";}
+
+
+var bph111gp="";
+if(bph111sc >= 75) 
+{
+bph111gp=4.00; bph111g="A"; }
+else if(bph111sc >= 70) {
+bph111gp=3.50; bph111g="AB";}
+else if(bph111sc >=65)
+{bph111gp=3.25; bph111g="B";}
+else if(bph111sc >=60)
+{bph111gp=3.00; bph111g="BC";}
+else if(bph111sc >=55)
+{bph111gp=2.75; bph111g="C"} 
+else if(bph111sc >=50)
+{bph111gp=2.50; bph111g="CD";
+} else if( bph111sc >=45) 
+{bph111gp=2.25; bph111g="D";}
+else if( bph111sc >=40) 
+{bph111gp=2.00; bph111g="P";}
+else if( bph111sc >=30) 
+{bph111gp=1.50; bph111g="F3";}
+else if( bph111sc >=20) 
+{bph111gp=1.00; bph111g="F2";} 
+else if( bph111sc >=10) 
+{bph111gp=0.50; bph111g="F1";}
+else if( bph111sc >=0) 
+{bph111gp=0.00; bph111g="F";}
+
+var bqs113gp="";
+if(bqs113sc >= 75) 
+{
+bqs113gp=4.00; bqs113g="A"; }
+else if(bqs113sc >= 70) {
+bqs113gp=3.50; bqs113g="AB";}
+else if(bqs113sc >=65)
+{bqs113gp=3.25; bqs113g="B";}
+else if(bqs113sc >=60)
+{bqs113gp=3.00; bqs113g="BC";}
+else if(bqs113sc >=55)
+{bqs113gp=2.75; bqs113g="C"} 
+else if(bqs113sc >=50)
+{bqs113gp=2.50; bqs113g="CD";
+} else if( bqs113sc >=45) 
+{bqs113gp=2.25; bqs113g="D";}
+else if( bqs113sc >=40) 
+{bqs113gp=2.00; bqs113g="P";}
+else if( bqs113sc >=30) 
+{bqs113gp=1.50; bqs113g="F3";}
+else if( bqs113sc >=20) 
+{bqs113gp=1.00; bqs113g="F2";} 
+else if( bqs113sc >=10) 
+{bqs113gp=0.50; bqs113g="F1";}
+else if( bqs113sc >=0) 
+{bqs113gp=0.00; bqs113g="F";}
+
+var gcs101gp="";
+if(gcs101sc >= 75) 
+{
+gcs101gp=4.00; gcs101g="A"; }
+else if(gcs101sc >= 70) {
+gcs101gp=3.50; gcs101g="AB";}
+else if(gcs101sc >=65)
+{gcs101gp=3.25; gcs101g="B";}
+else if(gcs101sc >=60)
+{gcs101gp=3.00; gcs101g="BC";}
+else if(gcs101sc >=55)
+{gcs101gp=2.75; gcs101g="C"} 
+else if(gcs101sc >=50)
+{gcs101gp=2.50; gcs101g="CD";
+} else if( gcs101sc >=45) 
+{gcs101gp=2.25; gcs101g="D";}
+else if( gcs101sc >=40) 
+{gcs101gp=2.00; gcs101g="P";}
+else if( gcs101sc >=30) 
+{gcs101gp=1.50; gcs101g="F3";}
+else if( gcs101sc >=20) 
+{gcs101gp=1.00; gcs101g="F2";} 
+else if( gcs101sc >=10) 
+{gcs101gp=0.50; gcs101g="F1";}
+else if( gcs101sc >=0) 
+{gcs101gp=0.00; gcs101g="F";}
+
+var mth111gp="";
+if(mth111sc >= 75) 
+{
+mth111gp=4.00; mth111g="A"; }
+else if(mth111sc >= 70) {
+mth111gp=3.50; mth111g="AB";}
+else if(mth111sc >=65)
+{mth111gp=3.25; mth111g="B";}
+else if(mth111sc >=60)
+{mth111gp=3.00; mth111g="BC";}
+else if(mth111sc >=55)
+{mth111gp=2.75; mth111g="C"} 
+else if(mth111sc >=50)
+{mth111gp=2.50; mth111g="CD";
+} else if( mth111sc >=45) 
+{mth111gp=2.25; mth111g="D";}
+else if( mth111sc >=40) 
+{mth111gp=2.00; mth111g="P";}
+else if( mth111sc >=30) 
+{mth111gp=1.50; mth111g="F3";}
+else if( mth111sc >=20) 
+{mth111gp=1.00; mth111g="F2";} 
+else if( mth111sc >=10) 
+{mth111gp=0.50; mth111g="F1";}
+else if( mth111sc >=0) 
+{mth111gp=0.00; mth111g="F";}
+
+
+var gns101value=gns101gp*2;
+var gns127value=gns127gp*2;
+var arc111value=arc111gp*2;
+var arc112value=arc112gp*2;
+var arc113value=arc113gp*2;
+var mec101value=mec101gp*3;
+var sug101value=sug101gp*2;
+var phe111value=phe111gp*1;
+var bch111value=bch111gp*2;
+var bph111value=bph111gp*3;
+var bqs113value=bqs113gp*3;
+var gcs101value=gcs101gp*2;
+var mth111value=mth111gp*2;
+var totalvalue=gns101value+gns127value+arc111value+arc112value+arc113value+sug101value+mec101value+phe111value+bch111value+bph111value+bqs113value+gcs101value+mth111value;
+var gp=totalvalue/28;
+document.getElementById("display").innerHTML="Grade Point:  "+gp; alert("Your Gp is " +gp);
+
+document.getElementById("gns101g").innerHTML=gns101g;
+document.getElementById("gns127g").innerHTML=gns127g;
+document.getElementById("arc111g").innerHTML=arc111g;
+document.getElementById("arc112g").innerHTML=arc112g;
+document.getElementById("arc113g").innerHTML=arc113g;
+document.getElementById("sug101g").innerHTML=sug101g;
+document.getElementById("mec101g").innerHTML=mec101g;
+document.getElementById("phe111g").innerHTML=phe111g;
+document.getElementById("bch111g").innerHTML=bch111g;
+document.getElementById("bph111g").innerHTML=bph111g;
+document.getElementById("bqs113g").innerHTML=bqs113g;
+document.getElementById("gcs101g").innerHTML=gcs101g;
+document.getElementById("mth111g").innerHTML=mth111g;
+document.getElementById("gns101gp").innerHTML=gns101gp;
+document.getElementById("gns127gp").innerHTML=gns127gp;
+document.getElementById("arc111gp").innerHTML=arc111gp;
+document.getElementById("arc112gp").innerHTML=arc112gp;
+document.getElementById("arc113gp").innerHTML=arc113gp;
+document.getElementById("sug101gp").innerHTML=sug101gp;
+document.getElementById("mec101gp").innerHTML=mec101gp;
+document.getElementById("phe111gp").innerHTML=phe111gp;
+document.getElementById("bch111gp").innerHTML=bch111gp;
+document.getElementById("bph111gp").innerHTML=bph111gp;
+document.getElementById("bqs113gp").innerHTML=bqs113gp;
+document.getElementById("gcs101gp").innerHTML=gcs101gp;
+document.getElementById("mth111gp").innerHTML=mth111gp;
+
+}
+</script>
+<style> 
+body{margin:0px; padding:0px; background-image:url(images/bgmage.png); background-size:100% 924px; background-repeat:norepeat; width:100%; overflow:scroll;}
+#header{background-color:#660033; font-family:arial black; color:white; padding:0px;}
+#icon{position:fixed;z-index:1;}
+#data{background-color:grey;font-family:comic sans ms; border-radius:15px; width:100%;}
+.action{width:80%; font-family:arial black; color:violet; height:40px; font-size:100%; background-color:#660033; border:0px; border-radius:25px;} #content{margin-top:5%; width:90%; background-color:violet; border:25px dotted black; border-color:navy; border-radius:20px; opacity:0.92;} table{table, td, th {
+    border: 0px solid white; 
+}  #gptable {font-size:10%; color:navy; width:100%;  background-color:violet; border:25px dotted black; border-color:navy; border-radius:20px; opacity:0.92; overflow:scroll;}
+td {text-align:left;}
+} #footer{background-color:transparent; font-family:comic sans ms;}
+.field{width:30px; background-color:transparent; border:0px; color:navy; font-family:arial black;}
+.result{background-color:grey; color:navy; font-family:arial black; width:100%;}
+
+</style>
+</head>
+<body onload="profile()"> <span id="icon"> <img src="images/icono.png" width="30%"> </span>
+<center>
+<div id="header">  <img src="images/headercon.png" width="50%">
+</div>
+<div id="content"> <div id="data"> <table border=2> <tr> <td>
+Name: <span id="nameme">Okorie Victor </span> <br> Reg No: Fpo/nd/arc/015/<span id="regina">142 </span> <br> Department:<span id="departna">Computer Engineering </span> <br>  
+</td> <td>  <img src="images/userphoto.png" width="50%" id="usermage">  </td> </tr>  </table> </div> <div id="display" style="background-color:navy; font-family:arial black; color:violet"> 
+</div> </div>
+<div id="gptable"> 
+<table border="1px" style="font-size:100%; background-color:violet; border:5px solid black; border-color:navy; border-radius:20px; opacity:0.92; width:100%;">
+<tr> <th> COURSE </th> <th> SCORE </th> <th> GRADE </th> <th>GRADE POINT </th> <th>  CREDIT UNIT
+</tr>
+<tr> <td> GNS 101 </td> <td> <input type="text" id="gns101score" class="field" onblur="calscore()" autofocus/>  </td> <td> <span id="gns101g"> </span> </td> <td> <span id="gns101gp">  </span> </td> <td><span id="gns101cu" class="creditunuits"> 2 </span> </td>
+<tr> <td> GNS 127 </td> <td> <input type="text" id="gns127score" class="field" onfocus="calscore()"/> </td> <td> <span id="gns127g"> </span> </td> <td> <span id="gns127gp"> </span> </td> <td><span id="gns127cu" class="creditunuits"> 2 </span> </td> 
+</tr>
+<tr> <td> ARC 111 </td> <td> <input type="text" id="arc111score" class="field" onfocus="calscore()"/> </td> <td> <span id="arc111g"> </span> </td> <td> <span id="arc111gp"> </span> </td> <td> <span id="arc111cu" class="creditunuits"> 2 </span> </td> 
+</tr>
+<tr> <td> ARC 113 </td> <td><input type="text" id="arc112score" class="field" onfocus="calscore()"/> </td> <td> <span id="arc112g"> </span> </td> <td> <span id="arc112gp"> </span> </td> <td> <span id="arc112cu" class="creditunuits"> 2 </span></td> 
+</tr>
+<tr> <td> ARC 112 </td> <td> <input type="text" id="arc113score" class="field" onfocus="calscore()"/> </td> <td> <span id="arc113g"> </span> </td> <td> <span id="arc113gp"> </span> </td> <td> <span id="arc113cu" class="creditunuits"> 2 </span></td> 
+</tr><tr> <td> MEC 101 </td> <td> <input type="text" id="sug101score" class="field" onfocus="calscore()"/> </td> <td> <span id="sug101g"> </span> </td> <td> <span id="sug101gp"> </span> </td> <td> <span id="sug101cu" class="creditunuits"> 3 </span></td> 
+</tr>
+
+<tr> <td> SUG 101 </td> <td> <input type="text" id="mec101score" class="field" onfocus="calscore()"/> </td> <td> <span id="mec101g"> </span> </td> <td> <span id="mec101gp"> </span> </td> <td> <span id="mec101cu" class="creditunuits">2 </span> </td> 
+</tr>
+<tr> <td> PHE 111 </td> <td> <input type="text" id="phe111score" class="field" onfocus="calscore()"/> </td> <td> <span id="phe111g"> </span> </td> <td> <span id="phe111gp"> </span> </td> <td> <span id="phe111cu" class="creditunuits"> 1 </span></td> 
+</tr>
+<tr> <td> BCH 111 </td> <td> <input type="text" id="bch111score" class="field" onfocus="calscore()"/> </td> <td> <span id="bch111g"> </span> </td> <td> <span id="bch111gp"> </span> </td> <td> <span id="arc113cu" class="creditunuits"> 2 </span> </td> 
+</tr> 
+<tr> <td> BPH 111 </td> <td> <input type="text" id="bph111score" class="field" onfocus="calscore()"/> </td> <td> <span id="bph111g"> </span> </td> <td> <span id="bph111gp"> </span> </td> <td> <span id="bph111cu" class="creditunuits"> 3 </span> </td> 
+</tr>
+<tr> <td> BQS 113 </td> <td> <input type="text" id="bqs113score" class="field" onfocus="calscore()"/> </td> <td> <span id="bqs113g"> </span> </td> <td> <span id="bqs113gp"> </span> </td> <td> <span id="bqs113cu" class="creditunuits"> 3 </span> </td> 
+</tr>
+<tr> <td> GCS 101 </td> <td> <input type="text" id="gcs101score" class="field" onfocus="calscore()"/> </td> <td> <span id="gcs101g"> </span> </td> <td> <span id="gcs101gp"> </span> </td> <td> <span id="gcs101cu" class="creditunuits"> 2 </span> </td> 
+</tr>
+<tr> <td> MTH 111 </td> <td> <input type="text" id="mth111score" class="field" onfocus="calscore()"/> </td> <td> <span id="mth111g"> </span> </td> <td> <span id="mth111gp"> </span> </td> <td> <span id="mth111cu" class="creditunuits"> 2 </span> </td> 
+</tr>
+</table>
+
+</div>   <input type="button" value="Calculate GP" onclick="mygp()" style="width:80%; background-color:#660033; height:40px; border-radius:10px; border:0px; color:violet; font-size:100%; font-family:arial black;">
+
+  <span id="footer"> <marquee direction="left" > For your app development call +2348142337936 or +2348026315772 or email:vikaxnet@gmail.com Website:vikaxnet.wordpress.com </marquee> </span> </div>
+</center>
+</body>
+</html>
